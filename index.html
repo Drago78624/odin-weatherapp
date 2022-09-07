@@ -9,14 +9,18 @@
   <body>
     <div class="container">
       <div class="search-container">
-        <form class="form">
+        <form class="form" autocomplete="off">
           <input type="text" name="user-input" class="searchbar" placeholder="Search...">
         </form>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
       </div>
+      <span class="err-msg">No such location found !</span>
       <div class="weather-display">
-        <h2 class="condition">MOSTLY SUNNY <img src="//cdn.weatherapi.com/weather/64x64/night/176.png" alt="condition-icon" class="condition-icon"></h2>
-        <h1 class="location">GUANGZHOU, CHINA</h1>
+        <div class="condition-container">
+          <h2 class="condition">MOSTLY SUNNY </h2>
+          <img src="//cdn.weatherapi.com/weather/64x64/night/176.png" alt="condition-icon" class="condition-icon">
+        </div>
+        <h1 class="location"><span class="city">Karachi</span>,<span class="country">Pakistan</span></h1>
         <div class="weather-info">
           <div class="temperature">
             <div class="temperature-value">
@@ -27,11 +31,11 @@
             </div>
           </div>
           <div class="other-info">
-            <div class="feels-like info">feels like :<span class="feels-like-value"> 70</span>°F</div>
-            <div class="cloud info">cloud :<span class="cloud-value"> 92</span>%</div>
-            <div class="wind info">wind :<span class="wind-value"> 45</span>MPH</div>
-            <div class="pressure info">pressure :<span class="pressure-value"> 70</span>MPH</div>
-            <div class="humidity info">humidity :<span class="humidity-value"> 85</span>%</div>
+            <div class="feelslike info">feels like : <span class="feelslike-value"> 70</span>°F</div>
+            <div class="cloud info">cloud : <span class="cloud-value"> 92</span>%</div>
+            <div class="wind info">wind : <span class="wind-value"> 45</span>MPH</div>
+            <div class="pressure info">pressure : <span class="pressure-value"> 70</span>MPH</div>
+            <div class="humidity info">humidity : <span class="humidity-value"> 85</span>%</div>
           </div>
         </div>
       </div>

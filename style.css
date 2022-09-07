@@ -38,7 +38,6 @@ h1 {
 .search-container {
   max-width: 315px;
   padding: 15px 20px;
-  margin-bottom: 50px;
   display: flex;
   align-items: center;
   background: rgba( 221, 213, 213, 0.2 );
@@ -66,6 +65,7 @@ input::placeholder {
 }
 
 .weather-display {
+  margin-top: 50px;
   color: white;
   padding: 40px;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -76,6 +76,11 @@ input::placeholder {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.condition-container {
+  display: flex;
+  gap: 10px;
 }
 
 .condition {
@@ -92,7 +97,8 @@ input::placeholder {
 
 .weather-info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
 .temperature {
@@ -113,4 +119,11 @@ input::placeholder {
 
 .info:not(:last-child){
   margin-bottom: 5px;
+}
+
+.err-msg {
+  color: red;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  display: none;
 }
