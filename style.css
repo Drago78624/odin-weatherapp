@@ -22,15 +22,21 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
 }
 
 h1 {
   color: white;
 }
 
-
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .search-container {
+  max-width: 315px;
   padding: 15px 20px;
   margin-bottom: 50px;
   display: flex;
@@ -60,5 +66,51 @@ input::placeholder {
 }
 
 .weather-display {
-  
+  color: white;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.condition {
+  font-weight: 300;
+}
+
+.condition-icon {
+  width: 48px;
+}
+
+.location {
+  margin-bottom: 20px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.temperature {
+  display: flex;
+}
+
+.temperature-value {
+  font-size: 8rem;
+}
+
+.temperature-unit {
+  font-size: 2rem;
+}
+
+.info {
+  text-transform: uppercase;
+}
+
+.info:not(:last-child){
+  margin-bottom: 5px;
 }
